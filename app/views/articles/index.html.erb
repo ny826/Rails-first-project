@@ -1,0 +1,11 @@
+<h1>Hello Welcome To My page !</h1>
+<ol>
+<% @abc.each do |abc|%>
+
+<li><%= abc.title%></li>
+<a href="/articles/<%= abc.id%>">Show</a>
+<a href="/articles/edit/<%= abc.id%>">Edit</a>
+<a href="/articles/delete/<%= abc.id%>">Delete</a>
+<% end -%>
+</ol>
+<a href="articles/new">Add New</a>

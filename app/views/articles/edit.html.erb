@@ -1,0 +1,7 @@
+<form action="/articles/<%= @abc.id%>/update" method="get"> 
+	<label>Title :</label><input type="text" name="title" value="<%= @abc.title%>"><br><br>
+	<label>Content :</label><input type="text area" name="content" value="<%= @abc.content%>"><br><br>
+     <input type="submit" value="Update">
+</form>
+
+<a href="/articles">Go Back</a>
